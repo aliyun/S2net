@@ -1,0 +1,21 @@
+TRAIN:
+  BASE_LR: 0.0000375
+  WARMUP_LR: 0.0000075
+  MIN_LR: 0.0000000025
+  BATCH_SIZE: 4
+  LOSS_TYPE: 'RMSLE' # BerHu
+DATA:
+  NUM_WORKERS: 8
+  DATASET_NAME: "Matterport3D"  # Matterport3D, Stanford3D, PanoSUNCG3D, 3D60, Pano3D
+  IMG_HEIGHT: 512
+  IMG_WIDTH: 1024
+TESTING:
+  BATCH_SIZE: 4
+
+BACKBONE:
+  TYPE: "swin"  # swin, resNet or effnet
+  #RESNET_LAYER_NUM: 50   # if backbone type == 'resnet', layner num should be specified, 50, 34, 18
+MODEL:
+  USE_CAF_FUSION: True
+  MAX_DEPTH: 10.0
+  DECODER_DIM: 256
