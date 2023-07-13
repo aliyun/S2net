@@ -8,6 +8,20 @@ This repository is licensed under MIT.
 
 We use some codes from [Pano3D](https://vcl3d.github.io/Pano3D/) project which is also licensed under MIT.
 
+## Bibtex
+If you find this code useful in your research, please cite:
+```text
+@article{li2023mathcal,
+  title={S2Net: Accurate Panorama Depth Estimation on Spherical Surface},
+  author={Li, Meng and Wang, Senbo and Yuan, Weihao and Shen, Weichao and Sheng, Zhe and Dong, Zilong},
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={2},
+  pages={1053--1060},
+  year={2023},
+  publisher={IEEE}
+}
+```
 ## Requirements
 
 We recommend you to use dockerfile provided in docker folder which uses CUDA 10.2 and pytorch 1.8.2 and tested on Tesla V100 32G.
